@@ -10,6 +10,7 @@
 // Read Sprockets README (https://github.com/rails/sprockets#sprockets-directives) for details
 // about supported directives.
 //
+//= require jquery3
 //= require rails-ujs
 //= require activestorage
 //= require vendor.min
@@ -19,3 +20,15 @@
 //= require vendor/prism
 //= require assets/app
 //= require_tree .
+
+$(document).ready(function() {
+  
+  var scrollLink = $('.scroll-smooth');
+  // Smooth scrolling
+  scrollLink.click(function(e) {
+    e.preventDefault();
+    $('body,html').animate({
+      scrollTop: $(this.hash).offset().top
+    }, 2000 );
+  });
+})
