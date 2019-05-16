@@ -12,7 +12,6 @@
 //
 //= require rails-ujs
 //= require activestorage
-//= require turbolinks
 //= require vendor.min
 //= require vendor/jquery.accordion
 //= require vendor/jquery.selectric
