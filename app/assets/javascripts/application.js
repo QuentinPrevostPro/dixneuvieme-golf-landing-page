@@ -24,11 +24,21 @@
 $(document).ready(function() {
   
   var scrollLink = $('.scroll-smooth');
+  var scrollLinkFast = $('.scroll-smooth-fast');
+
   // Smooth scrolling
   scrollLink.click(function(e) {
     e.preventDefault();
     $('body,html').animate({
       scrollTop: $(this.hash).offset().top
     }, 2000 );
+  });
+
+  // Smooth scrolling - Fast
+  scrollLinkFast.click(function(e) {
+    e.preventDefault();
+    $('body,html').animate({
+      scrollTop: $(this.hash).offset().top
+    }, 1000 );
   });
 })

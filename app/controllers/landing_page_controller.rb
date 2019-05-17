@@ -2,9 +2,6 @@ class LandingPageController < ApplicationController
   def index
   end
   def create
-    puts "<><><><><><><><><><><><><><><><><>"
-    puts params
-    puts "<><><><><><><><><><><><><><><><><>"
     @session = GoogleDrive::Session.from_config("config.json")
     @ws = @session.spreadsheet_by_key("1MKrYhqrlNSb0sWRsqeBjeDIK9KEMmhI3sYxHSpxh-mg").worksheets[0]
     @ws[@ws.num_rows+1,2] = params[:email]

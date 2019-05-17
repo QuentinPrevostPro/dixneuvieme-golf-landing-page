@@ -17,3 +17,9 @@
  *= require_self
  
  */
+
+ .CTA {
+  height: 100vh;
+  background-image: url(golf-etretat.jpg);
+  background-size: cover;
+ }
