@@ -292,12 +292,14 @@
               <div class="col-md-8">
                 <h2 class="display-3 mb-1">L'application en <b>avant-première</b></h2>
                 <p>Et devenez bêta-testeur</p>
-                <div class="input-group mt-2">
-                  <input type="text" class="form-control px-3" placeholder= "tiger@woods.com" aria-label="Get a free copy">
-                  <div class="input-group-append">
-                    <button class="btn btn-primary" type="button">Je m'inscris</button>
+                <%= form_tag landing_page_index_path, method: "post" do %>
+                  <div class="input-group mt-2">
+                    <%= text_field_tag 'email', nil, class: 'orm-control px-3', placeholder: 'tiger@woods.com' %>
+                    <div class="input-group-append">
+                      <%= submit_tag "Je m'inscris",  class: "btn btn-primary" %>
+                    </div>
                   </div>
-                </div>
+                <% end %>
               </div>
               <div class="col-md-4">
                 <img src="../../assets/images/demo/service/service-1.svg" alt="Image">
