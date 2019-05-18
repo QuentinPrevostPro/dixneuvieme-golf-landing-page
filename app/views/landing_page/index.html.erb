@@ -3,8 +3,8 @@
   <div class="container">
     <nav class="navbar navbar-expand-lg navbar-light">
       <a class="navbar-brand scroll-smooth-fast" href="#scroll-CTA">
-        <%= image_tag "logo-temp.png", class: "navbar-logo navbar-logo-light" %>
-        <%= image_tag "logo-temp.png", class: "navbar-logo navbar-logo-dark" %>
+        <%= image_tag "gobirdie-logo.png", class: "navbar-logo navbar-logo-light" %>
+        <%= image_tag "gobirdie-logo.png", class: "navbar-logo navbar-logo-dark" %>
       </a>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav align-items-center mr-auto">
@@ -16,6 +16,11 @@
           <li class="nav-item">
             <a class="nav-link scroll-smooth-fast" href="#scroll-user" role="button">
               Expérience utilisateur 
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link scroll-smooth-fast" href="#scroll-partners" role="button">
+              Partenaires 
             </a>
           </li>
         </ul>
@@ -37,8 +42,7 @@
   <div class="container">
     <div class="row justify-content-center">
       <div class="col-md-10 text-center p-10">
-        <h1 data-swiper-parallax="-100%" class="display-3">Aller jouer au golf n'a jamais été aussi <b>facile</b></i></h1>
-        <a href="#scroll-form" class="btn btn-primary btn-rounded px-5 scroll-smooth">Je suis intéressé</a>
+        <h1 data-swiper-parallax="-100%" class="display-3">Aller jouer au golf n'a jamais été aussi <b>facile</b></h1>
       </div>
     </div>
   </div>
@@ -48,7 +52,7 @@
 <!-- Valeur ajoutée du service -->
 <section class="bg-primary pt-0 pb-5" id="scroll-value">
   <div class="separator-top pt-3 text-white">
-  <h2 class="text-decorate text-white text-center mb-5 pl-5">19ème trou est la seule application qui étende l'expérience du golf jusqu'au centre de Paris</h2>
+  <h2 class="text-decorate text-white text-center mb-5 pl-5">GoBirdie est la seule application qui étende l'expérience du golf jusqu'au centre de Paris</h2>
     <div class="container text-white">
       <div class="row">
         <div class="col-md-4 text-center">
@@ -198,7 +202,7 @@
 <!-- Formulaire -->
 
 <!-- Partenaires -->
-<section class="separator-bottom">
+<section class="separator-bottom" id="scroll-partners">
   <div class="container">
     <div class="row justify-content-center">
       <div class="col-md-6 text-center">
@@ -207,9 +211,10 @@
     </div>
     <div class="row mt-8">
       <div class="col partners align-items-center">
-        <div class="owl-carousel" data-items="[2,2,2]" data-loop="false" data-autoplay="false">
+        <div class="owl-carousel" data-items="[3,3,3]" data-loop="false" data-autoplay="false">
             <%= image_tag "ffgolf-logo.jpg", class: "logo"%>
             <%= image_tag "bluegreen-logo.png", class: "logo"%>
+            <%= image_tag "montgolfiere-logo.png", class: "logo"%>
         </div>
       </div>
     </div>
