@@ -180,7 +180,7 @@
               <div class="col-md-8">
                 <h2 class="display-3 mb-1">L'application en <b>avant-première</b></h2>
                 <p>Devenez également bêta-testeur</p>
-                <%= form_tag landing_page_index_path, method: "post" do %>
+                <%= form_tag landing_pages_path, method: "post" do %>
                   <div class="input-group mt-2">
                     <%= text_field_tag 'email', nil, class: 'orm-control px-3', placeholder: 'tiger@woods.com' %>
                     <div class="input-group-append">

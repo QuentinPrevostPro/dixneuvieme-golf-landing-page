@@ -1,4 +1,4 @@
-class LandingPageController < ApplicationController
+class LandingPagesController < ApplicationController
   def index
   end
   def create
