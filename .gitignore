@@ -25,6 +25,4 @@
 
 # Ignore master key for decrypting credentials and more.
 /config/master.key
-config.json
-config-service.json
-.env
+client_secret.json
