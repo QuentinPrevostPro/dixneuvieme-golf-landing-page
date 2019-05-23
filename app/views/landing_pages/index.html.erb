@@ -169,6 +169,30 @@
 </section>
 <!-- Expérience utilisateur -->
 
+<!-- Tarif -->
+<section class="separator-top pt-3 pb-5">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-8 text-center">
+        <h2><b>Le prix</b></h2>
+        <p class="lead">S'abonner à GoBirdie est avantageux dès le premier parcours joué </p>
+      </div>
+    </div>
+    <div class="row justify-content-center">
+      <div class="col-md-5">
+        <div class="card card-price-3">
+          <div class="card-body bg-light">
+            <h4 class="card-title font-weight-bold text-purple">Abonnement mensuel</h4>
+            <strong class="card-price">30€/mois</strong>
+            <p>Incluant: les services du clubhouse, le transport et les green-fees à tarifs préférentiels</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Tarif -->
+
 <!-- Formulaire -->
 <section class="bg-primary pt-5 pb-5" id="scroll-form">
   <div class="container-fluid">
@@ -178,7 +202,7 @@
           <div class="container">
             <div class="row justify-content-between align-items-center">
               <div class="col-md-8">
-                <h2 class="display-3 mb-1">L'application en <b>avant-première</b></h2>
+                <h2 class="display-3 mb-1">L'application gratuitement en <b>avant-première</b></h2>
                 <p>Devenez également bêta-testeur</p>
                 <%= form_tag landing_pages_path, method: "post" do %>
                   <div class="input-group mt-2">
@@ -221,3 +245,22 @@
   </div>
 </section>
 <!-- Partenaires -->
+
+<!-- Pied de page -->
+<footer class= "row justify-content-between align-items-center footer-style navbar navbar-inverse navbar-fixed-bottom pt-1 pb-1">
+  <div class="col-md-4 text-center">
+    <ul class="nav">
+      <li class="nav-item">
+          <%= link_to 'Nous contacter', root_path, class: 'nav-link' %>
+      </li>
+    </ul>
+  </div>
+  <div class="col-md-4 text-center">
+    <%= image_tag "gobirdie-logo.png", class: "logo-sm" %>
+    <p class="copyright-text" style="padding-top:5px;"> Fait en 2019 à Paris avec <i class="fas fa-heart fa-lg"></i></p>
+  </div>
+  <div class="col-md-4 text-center">
+      <a href="https://www.facebook.com/19emetrou" target="_blank"><i class="fab fa-facebook fa-2x"></i></a>     
+  </div>
+</footer>
+<!-- Pied de page -->
