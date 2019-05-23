@@ -2,7 +2,7 @@ class LandingPagesController < ApplicationController
   def index
   end
   def create
-    @session = GoogleDrive::Session.from_service_account_key("client_secret.json")
+    @session = GoogleDrive::Session.from_config(ENV['GOOGLE_SETTING'])
     @ws = @session.spreadsheet_by_key("1MKrYhqrlNSb0sWRsqeBjeDIK9KEMmhI3sYxHSpxh-mg").worksheets[0]
     @ws[@ws.num_rows+1,2] = params[:email]
     @ws[@ws.num_rows,3] = "#{DateTime.now.day > 9 ? "#{DateTime.now.day}" : "0#{DateTime.now.day}"}/#{DateTime.now.month > 9 ? "#{DateTime.now.month}" : "0#{DateTime.now.month}"}/#{DateTime.now.year}"
