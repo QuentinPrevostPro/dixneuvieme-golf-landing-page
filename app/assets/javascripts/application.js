@@ -42,3 +42,10 @@ $(document).ready(function() {
     }, 1000 );
   });
 })
+
+// Alert fading
+window.setTimeout(function () {
+  $(".alert").fadeTo(500, 0).slideUp(500, function () {
+    $(this).remove();
+  });
+}, 5000);
