@@ -1,11 +1,12 @@
 <!-- En-tête -->
 <header class="header-sticky header-light" style="background-color:white;">
   <nav class="navbar navbar-expand-lg navbar-light">
-    <div class="container-fluid">
+    <div class="container">
       <a class="navbar-brand scroll-smooth-fast" href="#scroll-CTA">
         <%= image_tag "gobirdie-logo.png", class: "navbar-logo navbar-logo-light" %>
         <%= image_tag "gobirdie-logo.png", class: "navbar-logo navbar-logo-dark" %>
       </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="burger"><span></span></span></button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav align-items-center mr-auto">
           <li class="nav-item">
@@ -80,10 +81,10 @@
 <section class="pt-5 pb-0" id="scroll-user">
   <div class="container-fluid">
     <div class="row align-items-center justify-content-between" style="height:60vh;">
-        <div class="col-12 col-lg-6 p-0" style="height:60vh;">
+        <div class="col-6 p-0" style="height:60vh;">
           <%= image_tag "sport-club.svg", style:'height:60vh; width:100%;'%>
         </div>
-        <div class="col-12 col-lg-6">
+        <div class="col-6">
           <div class="row">
             <div class="col">
               <h2 class="text-decorate">Un clubhouse exclusif au <b>coeur de Paris</b></h2>
@@ -110,7 +111,7 @@
 <section class="pt-0 pb-0">
   <div class="container-fluid">
     <div class="row align-items-center justify-content-between"style="height:60vh;">
-        <div class="col-12 col-lg-6">
+        <div class="col-6">
           <div class="row">
             <div class="col">
               <h2 class="text-decorate">Le <b>transport</b> vers le golf assuré par nos soins</h2>
@@ -131,7 +132,7 @@
             </div>
           </div>
         </div>
-        <div class="col-12 col-lg-6 p-0" style="height:60vh;">
+        <div class="col-6 p-0" style="height:60vh;">
           <%= image_tag "car.svg", style:'height:60vh; width:100%;'%>
         </div>
     </div>
@@ -140,10 +141,10 @@
 <section class="pt-0 pb-5">
   <div class="container-fluid">
     <div class="row align-items-center justify-content-between" style="height:60vh;">
-        <div class="col-12 col-lg-6 p-0" style="height:60vh;">
+        <div class="col-6 p-0" style="height:60vh;">
           <%= image_tag "discount.svg", style:'height:60vh; width:100%;'%>
         </div>
-        <div class="col-12 col-lg-6">
+        <div class="col-6">
           <div class="row">
             <div class="col">
               <h2 class="text-decorate">Des green-fee à <b>-40%</b> ou plus</h2>
